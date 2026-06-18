@@ -375,6 +375,22 @@
         background: #fff;
       }
 
+      .feature-label {
+        padding: 3px 7px;
+        color: #17212f;
+        font-size: 0.76rem;
+        font-weight: 780;
+        line-height: 1.15;
+        border: 1px solid rgba(217, 224, 232, 0.9);
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.92);
+        box-shadow: 0 4px 12px rgba(23, 33, 47, 0.16);
+      }
+
+      .feature-label::before {
+        display: none;
+      }
+
       @media (max-width: 840px) {
         .app {
           display: flex;
@@ -525,7 +541,7 @@
       }).setView([16.45, 112.05], 8);
 
       L.tileLayer(
-        "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png",
+        "https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}.png",
         {
           maxZoom: 18,
           subdomains: "abcd",
@@ -747,6 +763,13 @@
             title: feature.name,
           })
             .bindPopup(popupHtml(feature))
+            .bindTooltip(feature.name, {
+              permanent: true,
+              direction: "top",
+              offset: [0, -13],
+              opacity: 1,
+              className: "feature-label",
+            })
             .on("click", () => selectFeature(feature.id, false));
 
           markerLayer.addLayer(marker);
