@@ -321,7 +321,16 @@
       #map {
         position: absolute;
         inset: 0;
-        background: var(--ocean);
+        --symbol-scale: 1;
+        --label-opacity: 1;
+        background: #ccecf4;
+      }
+
+      .leaflet-container {
+        background: #ccecf4;
+        font-family:
+          Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+          "Segoe UI", sans-serif;
       }
 
       .leaflet-popup-content {
@@ -375,20 +384,66 @@
         background: #fff;
       }
 
+      .chart-point {
+        display: grid;
+        place-items: center;
+        width: calc(var(--size) * var(--symbol-scale));
+        height: calc(var(--size) * var(--symbol-scale));
+        min-width: 7px;
+        min-height: 7px;
+        border: 2px solid #fff;
+        border-radius: 50%;
+        background: #0aa6b7;
+        box-shadow:
+          0 0 0 1px rgba(6, 112, 130, 0.8),
+          0 3px 9px rgba(23, 33, 47, 0.22);
+      }
+
+      .chart-point::after {
+        content: "";
+        width: 32%;
+        height: 32%;
+        min-width: 3px;
+        min-height: 3px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.9);
+      }
+
       .feature-label {
-        padding: 3px 7px;
-        color: #17212f;
-        font-size: 0.76rem;
-        font-weight: 780;
+        padding: 0;
+        color: #101722;
+        font-size: 0.78rem;
+        font-weight: 650;
         line-height: 1.15;
-        border: 1px solid rgba(217, 224, 232, 0.9);
-        border-radius: 8px;
-        background: rgba(255, 255, 255, 0.92);
-        box-shadow: 0 4px 12px rgba(23, 33, 47, 0.16);
+        text-align: center;
+        text-shadow:
+          -1px -1px 0 rgba(204, 236, 244, 0.95),
+          1px -1px 0 rgba(204, 236, 244, 0.95),
+          -1px 1px 0 rgba(204, 236, 244, 0.95),
+          1px 1px 0 rgba(204, 236, 244, 0.95);
+        border: 0;
+        background: transparent;
+        box-shadow: none;
+        opacity: var(--label-opacity) !important;
+        pointer-events: none;
       }
 
       .feature-label::before {
         display: none;
+      }
+
+      .chart-title-control {
+        color: #101722;
+        font-size: clamp(1.15rem, 2vw, 1.55rem);
+        font-weight: 760;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        text-shadow:
+          -1px -1px 0 rgba(204, 236, 244, 0.95),
+          1px -1px 0 rgba(204, 236, 244, 0.95),
+          -1px 1px 0 rgba(204, 236, 244, 0.95),
+          1px 1px 0 rgba(204, 236, 244, 0.95);
+        pointer-events: none;
       }
 
       @media (max-width: 840px) {
@@ -538,17 +593,22 @@
       const map = L.map("map", {
         zoomControl: true,
         scrollWheelZoom: true,
+        zoomSnap: 0.25,
+        worldCopyJump: true,
       }).setView([16.45, 112.05], 8);
 
       L.tileLayer(
-        "https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}.png",
+        "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
         {
-          maxZoom: 18,
-          subdomains: "abcd",
+          maxZoom: 19,
           attribution:
-            '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+            'Tiles &copy; Esri, Maxar, Earthstar Geographics, and the GIS user community',
         }
       ).addTo(map);
+
+      L.control.scale({ position: "topright", metric: true, imperial: true }).addTo(map);
+
+      
 
       const markerLayer = L.layerGroup().addTo(map);
       let islands = [];
@@ -565,6 +625,21 @@
         detail: document.querySelector("#detail"),
         featureList: document.querySelector("#feature-list"),
       };
+
+      function clamp(value, min, max) {
+        return Math.max(min, Math.min(max, value));
+      }
+
+      function updateSymbolScale() {
+        const scale = clamp(Math.pow(1.28, map.getZoom() - 9.25), 0.28, 1.16);
+        const labelOpacity = map.getZoom() < 6.75 ? 0 : map.getZoom() < 7.5 ? 0.68 : 1;
+
+        map.getContainer().style.setProperty("--symbol-scale", scale.toFixed(2));
+        map.getContainer().style.setProperty("--label-opacity", labelOpacity);
+      }
+
+      map.on("zoom zoomend", updateSymbolScale);
+      updateSymbolScale();
 
       function formatArea(feature) {
         const natural = feature.area?.naturalHa;
@@ -593,14 +668,20 @@
           .toLowerCase();
       }
 
-      function markerIcon(admin) {
-        const color = colors[admin] || "#546170";
+      function pointSizeForFeature(feature) {
+        const area = feature.area?.reclaimedHa || feature.area?.naturalHa || 10;
+
+        return Math.max(12, Math.min(24, Math.sqrt(area) * 1.35));
+      }
+
+      function markerIcon(feature) {
+        const size = pointSizeForFeature(feature);
 
         return L.divIcon({
           className: "",
-          html: `<span class="marker-dot" style="background:${color}"></span>`,
-          iconSize: [26, 26],
-          iconAnchor: [13, 13],
+          html: `<span class="chart-point" style="--size:${size}px"></span>`,
+          iconSize: [size + 10, size + 10],
+          iconAnchor: [(size + 10) / 2, (size + 10) / 2],
           popupAnchor: [0, -14],
         });
       }
@@ -758,15 +839,16 @@
 
         features.forEach((feature) => {
           const center = feature.location.center;
+          const size = pointSizeForFeature(feature);
           const marker = L.marker([center.lat, center.lng], {
-            icon: markerIcon(feature.deFactoAdministrator),
+            icon: markerIcon(feature),
             title: feature.name,
           })
             .bindPopup(popupHtml(feature))
             .bindTooltip(feature.name, {
               permanent: true,
               direction: "top",
-              offset: [0, -13],
+              offset: [0, -size / 2 - 8],
               opacity: 1,
               className: "feature-label",
             })
@@ -784,7 +866,7 @@
           ).pad(0.32);
 
           map.fitBounds(bounds, {
-            maxZoom: features.length === 1 ? 11 : 9,
+            maxZoom: features.length === 1 ? 10.5 : 9.25,
             animate: false,
           });
         }
