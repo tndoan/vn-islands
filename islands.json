@@ -1,0 +1,442 @@
+[
+  {
+    "id": "woody",
+    "name": "Woody Island",
+    "localNames": ["Dao Phu Lam", "Yongxing Dao"],
+    "archipelago": "Paracel",
+    "featureType": "Island",
+    "area": { "naturalHa": 210 },
+    "location": {
+      "center": { "lat": 16.8333, "lng": 112.3333 },
+      "shape": {
+        "type": "Point",
+        "coordinates": [{ "lat": 16.8333, "lng": 112.3333 }],
+        "precision": "Approximate center point; coastline polygon not yet traced."
+      }
+    },
+    "deFactoAdministrator": "China",
+    "claimants": ["China", "Taiwan", "Vietnam"],
+    "summary": "Largest natural island in the Paracels, with an airfield, harbor, civic facilities, and permanent Chinese administration.",
+    "sources": [{ "label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Woody_Island_(South_China_Sea)" }]
+  },
+  {
+    "id": "rocky",
+    "name": "Rocky Island",
+    "localNames": ["Dao Da", "Shidao"],
+    "archipelago": "Paracel",
+    "featureType": "Island",
+    "area": { "naturalHa": 8 },
+    "location": {
+      "center": { "lat": 16.846, "lng": 112.345 },
+      "shape": {
+        "type": "Point",
+        "coordinates": [{ "lat": 16.846, "lng": 112.345 }],
+        "precision": "Approximate center point; coastline polygon not yet traced."
+      }
+    },
+    "deFactoAdministrator": "China",
+    "claimants": ["China", "Taiwan", "Vietnam"],
+    "summary": "Small high point adjacent to Woody Island; often treated with Woody Island as the administrative center of the Paracels.",
+    "sources": [{ "label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Paracel_Islands" }]
+  },
+  {
+    "id": "tree",
+    "name": "Tree Island",
+    "localNames": ["Dao Cay", "Zhaoshu Dao"],
+    "archipelago": "Paracel",
+    "featureType": "Island",
+    "area": { "naturalHa": 22 },
+    "location": {
+      "center": { "lat": 16.9833, "lng": 112.2667 },
+      "shape": {
+        "type": "Point",
+        "coordinates": [{ "lat": 16.9833, "lng": 112.2667 }],
+        "precision": "Approximate center point; coastline polygon not yet traced."
+      }
+    },
+    "deFactoAdministrator": "China",
+    "claimants": ["China", "Taiwan", "Vietnam"],
+    "summary": "Northern Amphitrite Group island with Chinese outpost infrastructure; sovereignty is disputed by Vietnam and Taiwan.",
+    "sources": [{ "label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Paracel_Islands" }]
+  },
+  {
+    "id": "lincoln",
+    "name": "Lincoln Island",
+    "localNames": ["Dao Linh Con", "Dong Dao"],
+    "archipelago": "Paracel",
+    "featureType": "Island",
+    "area": { "naturalHa": 160 },
+    "location": {
+      "center": { "lat": 16.6667, "lng": 112.7333 },
+      "shape": {
+        "type": "Point",
+        "coordinates": [{ "lat": 16.6667, "lng": 112.7333 }],
+        "precision": "Approximate center point; coastline polygon not yet traced."
+      }
+    },
+    "deFactoAdministrator": "China",
+    "claimants": ["China", "Taiwan", "Vietnam"],
+    "summary": "Large Paracel feature east of the main Amphitrite and Crescent groups; listed among the major islands of the archipelago.",
+    "sources": [{ "label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Paracel_Islands" }]
+  },
+  {
+    "id": "pattle",
+    "name": "Pattle Island",
+    "localNames": ["Dao Hoang Sa", "Shanhudao"],
+    "archipelago": "Paracel",
+    "featureType": "Island",
+    "area": { "naturalHa": 32 },
+    "location": {
+      "center": { "lat": 16.535, "lng": 111.625 },
+      "shape": {
+        "type": "Point",
+        "coordinates": [{ "lat": 16.535, "lng": 111.625 }],
+        "precision": "Approximate center point; coastline polygon not yet traced."
+      }
+    },
+    "deFactoAdministrator": "China",
+    "claimants": ["China", "Taiwan", "Vietnam"],
+    "summary": "Crescent Group island formerly used as a Vietnamese and French administrative base; under Chinese control since the 1974 Paracel battle.",
+    "sources": [{ "label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Pattle_Island" }]
+  },
+  {
+    "id": "money",
+    "name": "Money Island",
+    "localNames": ["Dao Quang Hoa", "Jinyin Dao"],
+    "archipelago": "Paracel",
+    "featureType": "Island",
+    "area": { "naturalHa": 36 },
+    "location": {
+      "center": { "lat": 16.444, "lng": 111.501 },
+      "shape": {
+        "type": "Point",
+        "coordinates": [{ "lat": 16.444, "lng": 111.501 }],
+        "precision": "Approximate center point; coastline polygon not yet traced."
+      }
+    },
+    "deFactoAdministrator": "China",
+    "claimants": ["China", "Taiwan", "Vietnam"],
+    "summary": "Western Crescent Group island in the Paracels; de facto control is Chinese while sovereignty remains disputed.",
+    "sources": [{ "label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Paracel_Islands" }]
+  },
+  {
+    "id": "triton",
+    "name": "Triton Island",
+    "localNames": ["Dao Tri Ton", "Zhongjian Dao"],
+    "archipelago": "Paracel",
+    "featureType": "Island",
+    "area": { "naturalHa": 120 },
+    "location": {
+      "center": { "lat": 15.787, "lng": 111.194 },
+      "shape": {
+        "type": "Point",
+        "coordinates": [{ "lat": 15.787, "lng": 111.194 }],
+        "precision": "Approximate center point; coastline polygon not yet traced."
+      }
+    },
+    "deFactoAdministrator": "China",
+    "claimants": ["China", "Taiwan", "Vietnam"],
+    "summary": "Southwestern Paracel island near major sea lanes; the wider archipelago is controlled by China and claimed by Vietnam and Taiwan.",
+    "sources": [{ "label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Paracel_Islands" }]
+  },
+  {
+    "id": "itu-aba",
+    "name": "Itu Aba Island",
+    "localNames": ["Dao Ba Binh", "Taiping Island"],
+    "archipelago": "Spratly",
+    "featureType": "Island",
+    "area": { "naturalHa": 46 },
+    "location": {
+      "center": { "lat": 10.376, "lng": 114.365 },
+      "shape": {
+        "type": "Point",
+        "coordinates": [{ "lat": 10.376, "lng": 114.365 }],
+        "precision": "Approximate center point; coastline polygon not yet traced."
+      }
+    },
+    "deFactoAdministrator": "Taiwan",
+    "claimants": ["China", "Philippines", "Taiwan", "Vietnam"],
+    "summary": "Largest naturally occurring Spratly island, administered by Taiwan and equipped with an airstrip and pier.",
+    "sources": [{ "label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Itu_Aba_Island" }]
+  },
+  {
+    "id": "thitu",
+    "name": "Thitu Island",
+    "localNames": ["Pag-asa", "Dao Thi Tu"],
+    "archipelago": "Spratly",
+    "featureType": "Island",
+    "area": { "naturalHa": 37.2 },
+    "location": {
+      "center": { "lat": 11.052, "lng": 114.284 },
+      "shape": {
+        "type": "Point",
+        "coordinates": [{ "lat": 11.052, "lng": 114.284 }],
+        "precision": "Approximate center point; coastline polygon not yet traced."
+      }
+    },
+    "deFactoAdministrator": "Philippines",
+    "claimants": ["China", "Philippines", "Taiwan", "Vietnam"],
+    "summary": "Largest Philippine-administered Spratly island and the main settlement of Kalayaan municipality, with civilian infrastructure and an airstrip.",
+    "sources": [{ "label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Thitu_Island" }]
+  },
+  {
+    "id": "west-york",
+    "name": "West York Island",
+    "localNames": ["Likas", "Dao Ben Lac"],
+    "archipelago": "Spratly",
+    "featureType": "Island",
+    "area": { "naturalHa": 18.6 },
+    "location": {
+      "center": { "lat": 11.083, "lng": 115.017 },
+      "shape": {
+        "type": "Point",
+        "coordinates": [{ "lat": 11.083, "lng": 115.017 }],
+        "precision": "Approximate center point; coastline polygon not yet traced."
+      }
+    },
+    "deFactoAdministrator": "Philippines",
+    "claimants": ["China", "Philippines", "Taiwan", "Vietnam"],
+    "summary": "Philippine-administered sand cay and one of the larger naturally occurring Spratly islands.",
+    "sources": [{ "label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/West_York_Island" }]
+  },
+  {
+    "id": "northeast-cay",
+    "name": "Northeast Cay",
+    "localNames": ["Parola", "Dao Song Tu Dong"],
+    "archipelago": "Spratly",
+    "featureType": "Cay",
+    "area": { "naturalHa": 12.7 },
+    "location": {
+      "center": { "lat": 11.459, "lng": 114.354 },
+      "shape": {
+        "type": "Point",
+        "coordinates": [{ "lat": 11.459, "lng": 114.354 }],
+        "precision": "Approximate center point; coastline polygon not yet traced."
+      }
+    },
+    "deFactoAdministrator": "Philippines",
+    "claimants": ["China", "Philippines", "Taiwan", "Vietnam"],
+    "summary": "Philippine-administered cay in North Danger Reef, only a short distance from Vietnamese-administered Southwest Cay.",
+    "sources": [{ "label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Northeast_Cay" }]
+  },
+  {
+    "id": "southwest-cay",
+    "name": "Southwest Cay",
+    "localNames": ["Dao Song Tu Tay", "Pugad"],
+    "archipelago": "Spratly",
+    "featureType": "Cay",
+    "area": { "naturalHa": 12 },
+    "location": {
+      "center": { "lat": 11.428, "lng": 114.332 },
+      "shape": {
+        "type": "Point",
+        "coordinates": [{ "lat": 11.428, "lng": 114.332 }],
+        "precision": "Approximate center point; coastline polygon not yet traced."
+      }
+    },
+    "deFactoAdministrator": "Vietnam",
+    "claimants": ["China", "Philippines", "Taiwan", "Vietnam"],
+    "summary": "Vietnamese-administered cay in North Danger Reef; historically noted for bird habitat and guano deposits.",
+    "sources": [{ "label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Southwest_Cay" }]
+  },
+  {
+    "id": "spratly-island",
+    "name": "Spratly Island",
+    "localNames": ["Dao Truong Sa Lon"],
+    "archipelago": "Spratly",
+    "featureType": "Island",
+    "area": { "naturalHa": 13 },
+    "location": {
+      "center": { "lat": 8.644, "lng": 111.921 },
+      "shape": {
+        "type": "Point",
+        "coordinates": [{ "lat": 8.644, "lng": 111.921 }],
+        "precision": "Approximate center point; coastline polygon not yet traced."
+      }
+    },
+    "deFactoAdministrator": "Vietnam",
+    "claimants": ["China", "Philippines", "Taiwan", "Vietnam"],
+    "summary": "Vietnamese-administered island with an airstrip and harbor; commonly listed as one of the largest natural Spratly islands.",
+    "sources": [{ "label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Spratly_Island" }]
+  },
+  {
+    "id": "sin-cowe",
+    "name": "Sin Cowe Island",
+    "localNames": ["Dao Sinh Ton"],
+    "archipelago": "Spratly",
+    "featureType": "Island",
+    "area": { "naturalHa": 8 },
+    "location": {
+      "center": { "lat": 9.883, "lng": 114.333 },
+      "shape": {
+        "type": "Point",
+        "coordinates": [{ "lat": 9.883, "lng": 114.333 }],
+        "precision": "Approximate center point; coastline polygon not yet traced."
+      }
+    },
+    "deFactoAdministrator": "Vietnam",
+    "claimants": ["China", "Philippines", "Taiwan", "Vietnam"],
+    "summary": "Vietnamese-administered island in Union Banks, occupied by Vietnamese forces since the 1970s.",
+    "sources": [{ "label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/List_of_maritime_features_in_the_Spratly_Islands" }]
+  },
+  {
+    "id": "namyit",
+    "name": "Namyit Island",
+    "localNames": ["Dao Nam Yet"],
+    "archipelago": "Spratly",
+    "featureType": "Island",
+    "area": { "naturalHa": 5.3 },
+    "location": {
+      "center": { "lat": 10.179, "lng": 114.366 },
+      "shape": {
+        "type": "Point",
+        "coordinates": [{ "lat": 10.179, "lng": 114.366 }],
+        "precision": "Approximate center point; coastline polygon not yet traced."
+      }
+    },
+    "deFactoAdministrator": "Vietnam",
+    "claimants": ["China", "Philippines", "Taiwan", "Vietnam"],
+    "summary": "Vietnamese-administered island in Tizard Bank, close to Itu Aba and Sand Cay.",
+    "sources": [{ "label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/List_of_maritime_features_in_the_Spratly_Islands" }]
+  },
+  {
+    "id": "amboyna",
+    "name": "Amboyna Cay",
+    "localNames": ["Dao An Bang"],
+    "archipelago": "Spratly",
+    "featureType": "Cay",
+    "area": { "naturalHa": 1.6 },
+    "location": {
+      "center": { "lat": 7.892, "lng": 112.922 },
+      "shape": {
+        "type": "Point",
+        "coordinates": [{ "lat": 7.892, "lng": 112.922 }],
+        "precision": "Approximate center point; coastline polygon not yet traced."
+      }
+    },
+    "deFactoAdministrator": "Vietnam",
+    "claimants": ["China", "Malaysia", "Philippines", "Taiwan", "Vietnam"],
+    "summary": "Vietnamese-administered cay in the southern Spratlys, with a lighthouse and fortified facilities.",
+    "sources": [{ "label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/List_of_maritime_features_in_the_Spratly_Islands" }]
+  },
+  {
+    "id": "loaita",
+    "name": "Loaita Island",
+    "localNames": ["Kota", "Dao Loai Ta"],
+    "archipelago": "Spratly",
+    "featureType": "Island",
+    "area": { "naturalHa": 6.45 },
+    "location": {
+      "center": { "lat": 10.667, "lng": 114.425 },
+      "shape": {
+        "type": "Point",
+        "coordinates": [{ "lat": 10.667, "lng": 114.425 }],
+        "precision": "Approximate center point; coastline polygon not yet traced."
+      }
+    },
+    "deFactoAdministrator": "Philippines",
+    "claimants": ["China", "Philippines", "Taiwan", "Vietnam"],
+    "summary": "Philippine-administered island in the Loaita Bank area of the Spratlys.",
+    "sources": [{ "label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/List_of_maritime_features_in_the_Spratly_Islands" }]
+  },
+  {
+    "id": "nanshan",
+    "name": "Nanshan Island",
+    "localNames": ["Lawak", "Dao Vinh Vien"],
+    "archipelago": "Spratly",
+    "featureType": "Island",
+    "area": { "naturalHa": 7.93 },
+    "location": {
+      "center": { "lat": 10.732, "lng": 115.823 },
+      "shape": {
+        "type": "Point",
+        "coordinates": [{ "lat": 10.732, "lng": 115.823 }],
+        "precision": "Approximate center point; coastline polygon not yet traced."
+      }
+    },
+    "deFactoAdministrator": "Philippines",
+    "claimants": ["China", "Philippines", "Taiwan", "Vietnam"],
+    "summary": "Philippine-administered island east of the main Thitu area, used as a military outpost.",
+    "sources": [{ "label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/List_of_maritime_features_in_the_Spratly_Islands" }]
+  },
+  {
+    "id": "swallow",
+    "name": "Swallow Reef",
+    "localNames": ["Terumbu Layang-Layang", "Da Hoa Lau"],
+    "archipelago": "Spratly",
+    "featureType": "Reef / artificial island",
+    "area": { "naturalHa": 6.2, "reclaimedHa": 35 },
+    "location": {
+      "center": { "lat": 7.375, "lng": 113.833 },
+      "shape": {
+        "type": "Point",
+        "coordinates": [{ "lat": 7.375, "lng": 113.833 }],
+        "precision": "Approximate center point; reef/artificial-island outline not yet traced."
+      }
+    },
+    "deFactoAdministrator": "Malaysia",
+    "claimants": ["China", "Malaysia", "Taiwan", "Vietnam"],
+    "summary": "Malaysian-administered reef developed with a naval station, airstrip, and dive-resort infrastructure.",
+    "sources": [{ "label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/List_of_maritime_features_in_the_Spratly_Islands" }]
+  },
+  {
+    "id": "fiery-cross",
+    "name": "Fiery Cross Reef",
+    "localNames": ["Da Chu Thap", "Yongshu Jiao"],
+    "archipelago": "Spratly",
+    "featureType": "Reef / artificial island",
+    "area": { "naturalHa": 0, "reclaimedHa": 274 },
+    "location": {
+      "center": { "lat": 9.55, "lng": 112.883 },
+      "shape": {
+        "type": "Point",
+        "coordinates": [{ "lat": 9.55, "lng": 112.883 }],
+        "precision": "Approximate center point; reef/artificial-island outline not yet traced."
+      }
+    },
+    "deFactoAdministrator": "China",
+    "claimants": ["China", "Philippines", "Taiwan", "Vietnam"],
+    "summary": "Chinese-administered reef transformed by large-scale reclamation into a major artificial island with runway and harbor facilities.",
+    "sources": [{ "label": "AMTI", "url": "https://amti.csis.org/fiery-cross-reef/" }]
+  },
+  {
+    "id": "subi",
+    "name": "Subi Reef",
+    "localNames": ["Da Xu Bi", "Zhubi Jiao"],
+    "archipelago": "Spratly",
+    "featureType": "Reef / artificial island",
+    "area": { "naturalHa": 0, "reclaimedHa": 395 },
+    "location": {
+      "center": { "lat": 10.923, "lng": 114.083 },
+      "shape": {
+        "type": "Point",
+        "coordinates": [{ "lat": 10.923, "lng": 114.083 }],
+        "precision": "Approximate center point; reef/artificial-island outline not yet traced."
+      }
+    },
+    "deFactoAdministrator": "China",
+    "claimants": ["China", "Philippines", "Taiwan", "Vietnam"],
+    "summary": "Chinese-administered reef near Thitu Island, now a large artificial island with runway and military-capable infrastructure.",
+    "sources": [{ "label": "AMTI", "url": "https://amti.csis.org/subi-reef/" }]
+  },
+  {
+    "id": "mischief",
+    "name": "Mischief Reef",
+    "localNames": ["Da Vanh Khan", "Meiji Jiao"],
+    "archipelago": "Spratly",
+    "featureType": "Reef / artificial island",
+    "area": { "naturalHa": 0, "reclaimedHa": 558 },
+    "location": {
+      "center": { "lat": 9.902, "lng": 115.536 },
+      "shape": {
+        "type": "Point",
+        "coordinates": [{ "lat": 9.902, "lng": 115.536 }],
+        "precision": "Approximate center point; reef/artificial-island outline not yet traced."
+      }
+    },
+    "deFactoAdministrator": "China",
+    "claimants": ["China", "Philippines", "Taiwan", "Vietnam"],
+    "summary": "Chinese-administered reef inside the Spratly area, extensively reclaimed into one of the largest artificial islands in the region.",
+    "sources": [{ "label": "AMTI", "url": "https://amti.csis.org/mischief-reef/" }]
+  }
+]
